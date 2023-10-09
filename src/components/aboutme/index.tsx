@@ -4,25 +4,25 @@ const AboutMe = () => {
   return (
     <div>
       <h3 className="text-xl font-semibold">Sobre mim</h3>
-      <p className="pt-3 font-light text-sm text-justify">
+      <p className="pt-3 font-normal text-sm lg:text-base text-justify">
         Nos últimos 12 anos atuei em projetos nas áreas{" "}
-        <strong className="font-semibold">pública</strong> e em{" "}
-        <strong className="font-semibold">startups</strong>. Trabalho com
-        tecnologia desde muito jovem, aprendi a programar com diversas
-        tecnologias, criando as mais variadas soluções como{" "}
-        <strong className="font-semibold">
+        <strong className="font-bold">pública</strong> e em{" "}
+        <strong className="font-bold">startups</strong>. Trabalho com tecnologia
+        desde muito jovem, aprendi a programar com diversas tecnologias, criando
+        as mais variadas soluções como{" "}
+        <strong className="font-bold">
           Sistemas Web, APIs, Coletas de dados
         </strong>{" "}
-        e <strong className="font-semibold">Data Pipelines</strong>.
+        e <strong className="font-bold">Data Pipelines</strong>.
       </p>
-      <p className="pt-3 font-light text-sm text-justify">
+      <p className="pt-3 font-normal text-sm lg:text-base text-justify">
         Tenho o objetivo de{" "}
-        <strong className="font-semibold">
+        <strong className="font-bold">
           impulsionar o crescimento das empresas
         </strong>
-        , criar <strong className="font-semibold">produtos inovadores</strong>,
-        além de ajudar várias{" "}
-        <strong className="font-semibold">políticas públicas</strong>.
+        , criar <strong className="font-bold">produtos inovadores</strong>, além
+        de ajudar várias{" "}
+        <strong className="font-bold">políticas públicas</strong>.
       </p>
     </div>
   );
