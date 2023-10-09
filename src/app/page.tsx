@@ -1,5 +1,6 @@
 import AboutMe from "@/components/aboutme";
 import BlogPosts from "@/components/blogposts";
+import Experience from "@/components/experience";
 import Header from "@/components/header";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <main className="flex flex-col gap-4">
         <AboutMe />
+        <Experience />
         <BlogPosts />
       </main>
     </div>
