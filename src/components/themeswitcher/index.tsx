@@ -11,7 +11,7 @@ const icon = {
 
 const ThemeSwitcher = () => {
   const [activeTheme, setActiveTheme] = React.useState<"light" | "dark">(
-    localStorage.theme || "light"
+    "dark"
   );
   const buttonClasses = clsx(
     activeTheme === "light" && "hover:bg-gray-300 rounded-md p-1",
@@ -19,24 +19,14 @@ const ThemeSwitcher = () => {
   );
 
   const setDarkTheme = () => {
-    localStorage.theme = "dark";
     setActiveTheme("dark");
     document.documentElement.classList.add("dark");
   };
 
   const setLightTheme = () => {
-    localStorage.theme = "light";
     setActiveTheme("light");
     document.documentElement.classList.remove("dark");
   };
-
-  React.useEffect(() => {
-    if (activeTheme === "light") {
-      document.documentElement.classList.remove("dark");
-    } else {
-      document.documentElement.classList.add("dark");
-    }
-  }, [activeTheme]);
 
   return (
     <button
