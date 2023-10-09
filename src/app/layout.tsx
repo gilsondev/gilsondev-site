@@ -13,6 +13,12 @@ const merriweather = Merriweather({
 export const metadata: Metadata = {
   title: "Gilson Filho",
   description: "Site do desenvolvedor Gilson Filho",
+  openGraph: {
+    type: "website",
+    title: "Gilson Filho",
+    description: "Site do desenvolvedor Gilson Filho",
+    images: ["/logo.svg"],
+  },
 };
 
 export default function RootLayout({
