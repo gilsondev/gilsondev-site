@@ -7,7 +7,7 @@ export default async function Home() {
   const posts = await fetchLatestPosts();
 
   return (
-    <div className="px-6 md:px-6 pt-1 pb-24 md:pt-10 md:pb-44 max-w-[700px] mx-auto">
+    <div className="px-6 md:px-6 pt-1 pb-24 md:pt-10 md:pb-44 max-w-[800px] mx-auto">
       <Header />
       <main className="flex flex-col gap-4">
         <AboutMe />
