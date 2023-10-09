@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Hyperlink from "../hyperlink";
-import { Github, LampCeiling, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import ThemeSwitcher from "../themeswitcher";
 
 const Header = () => {

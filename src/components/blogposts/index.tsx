@@ -1,20 +1,18 @@
 import React from "react";
 import Hyperlink from "../hyperlink";
-import { Post } from "@/lib/types";
 import PostCard from "../postcard";
+import { fetchLatestPosts } from "@/lib/hashnode/client";
 
-interface BlogPostsProps {
-  posts: Post[];
-}
+const BlogPosts = async () => {
+  const posts = await fetchLatestPosts();
 
-const BlogPosts = ({ posts }: BlogPostsProps) => {
   return (
     <div className="mt-16">
       <h3 className="text-xl font-semibold dark:text-gray-200">
         Últimas postagens
       </h3>
       <div className="flex flex-col gap-3 list-none">
-        {posts.map((post) => (
+        {posts.data.user.publication.posts.map((post) => (
           <PostCard key={post._id} post={post} />
         ))}
       </div>

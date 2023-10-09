@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Merriweather } from "next/font/google";
 import GAnalytics from "@/components/ganalytics";
+import { ThemeProvider } from "./providers";
 
 const merriweather = Merriweather({
   subsets: ["latin"],
@@ -20,12 +21,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="pt-BR" suppressHydrationWarning>
       <body
         className={clsx(merriweather.className, "bg-gray-100 dark:bg-gray-800")}
       >
         <GAnalytics />
-        {children}
+        <ThemeProvider attribute="class" enableSystem={false}>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
