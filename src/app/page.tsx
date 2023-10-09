@@ -7,12 +7,12 @@ export default async function Home() {
   const posts = await fetchLatestPosts();
 
   return (
-    <>
+    <div className="px-6 md:px-6 pt-1 pb-24 md:pt-10 md:pb-44 max-w-[700px] mx-auto">
       <Header />
-      <main className="py-10 px-5 sm:px-24 lg:px-96 lg:mx-28">
+      <main className="flex flex-col gap-4">
         <AboutMe />
         <BlogPosts posts={posts.data.user.publication.posts} />
       </main>
-    </>
+    </div>
   );
 }

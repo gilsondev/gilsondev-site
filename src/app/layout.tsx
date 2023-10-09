@@ -2,6 +2,7 @@ import clsx from "clsx";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Merriweather } from "next/font/google";
+import GAnalytics from "@/components/ganalytics";
 
 const merriweather = Merriweather({ subsets: ["latin"], weight: "400" });
 
@@ -18,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={clsx(merriweather.className, "bg-gray-100")}>
+        <GAnalytics />
         {children}
       </body>
     </html>

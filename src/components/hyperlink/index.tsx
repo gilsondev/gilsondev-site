@@ -5,14 +5,14 @@ import React from "react";
 
 interface HyperlinkProps {
   href: string | HTMLAnchorElement;
-  text: string;
+  label: string | React.ReactNode;
   target?: string;
   className?: string;
 }
 
 const Hyperlink = ({
   href,
-  text,
+  label,
   className,
   target = "self",
 }: HyperlinkProps) => {
@@ -21,15 +21,17 @@ const Hyperlink = ({
       href={href}
       className={clsx(
         className,
-        "flex gap-1 items-center hover:text-gray-500 text-sm sm:text-lg lg:text-base underline group"
+        "flex gap-1 items-center hover:text-gray-500 underline group"
       )}
       target={target}
     >
-      {text}
-      <ExternalLink
-        size={12}
-        className="group-hover:text-gray-500 mb-4 -ml-1"
-      />
+      {label}
+      {typeof label === "string" && (
+        <ExternalLink
+          size={12}
+          className="group-hover:text-gray-500 mb-4 -ml-1"
+        />
+      )}
     </Link>
   );
 };

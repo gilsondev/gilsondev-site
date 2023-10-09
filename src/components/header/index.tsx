@@ -1,12 +1,11 @@
-import { ExternalLink } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import Hyperlink from "../hyperlink";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="flex items-center gap-5 px-5 py-10 sm:px-24 lg:px-96 lg:mx-28">
+    <header className="flex items-center gap-5 py-10 sm:px-0">
       <Image
         src="/avatar.jpeg"
         alt="Gilson Filho"
@@ -19,20 +18,20 @@ const Header = () => {
         <h2 className="font-normal text-sm">Fullstack Software Engineer</h2>
         <div className="flex gap-3 items-center pt-2">
           <Hyperlink
-            className="text-xs"
-            href="mailto@me@gilsondev.in"
-            text="E-mail"
+            className="text-xs md:text-md lg:text-base"
+            href="mailto:me@gilsondev.in"
+            label={<Mail />}
           />
           <Hyperlink
-            className="text-xs"
+            className="text-xs md:text-md lg:text-base"
             href="https://linkedin.com/in/gilsondev"
-            text="LinkedIn"
+            label={<Linkedin />}
             target="_blank"
           />
           <Hyperlink
-            className="text-xs"
+            className="text-xs md:text-md lg:text-base"
             href="https://github.com/gilsondev"
-            text="Github"
+            label={<Github />}
             target="_blank"
           />
         </div>
