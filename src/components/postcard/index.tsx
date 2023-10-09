@@ -11,7 +11,7 @@ const PostCard = ({ post }: PostCardProps) => {
   return (
     <>
       <Link
-        href={`https://gilsondev.in/${post.slug}`}
+        href={`https://blog.gilsondev.in/${post.slug}`}
         target="_blank"
         key={post._id}
         className="py-5"

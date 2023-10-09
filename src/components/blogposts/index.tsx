@@ -18,7 +18,7 @@ const BlogPosts = ({ posts }: BlogPostsProps) => {
       </div>
       <Hyperlink
         className="mt-10"
-        href="https://gilsondev.in"
+        href="https://blog.gilsondev.in"
         text="Ver mais"
         target="_blank"
       />
