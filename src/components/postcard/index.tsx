@@ -20,7 +20,7 @@ const PostCard = ({ post }: PostCardProps) => {
           {new Date(post.dateAdded).toLocaleDateString("pt-BR")}
         </span>
         <div className="flex justify-between items-center gap-3">
-          <span className="text-gray-800 font-bold text-sm lg:text-base hover:text-gray-500">
+          <span className="text-gray-800 font-bold text-sm lg:text-base hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400">
             {post.title}
           </span>
           <Image

@@ -1,7 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import Hyperlink from "../hyperlink";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, LampCeiling, Linkedin, Mail } from "lucide-react";
+import ThemeSwitcher from "../themeswitcher";
 
 const Header = () => {
   return (
@@ -13,29 +14,40 @@ const Header = () => {
         height={96}
         className="rounded-full"
       />
-      <div>
-        <h1 className="text-2xl lg:text-3xl font-bold">Gilson Filho</h1>
-        <h2 className="font-normal text-sm">Fullstack Software Engineer</h2>
+      <div className="w-5/6">
+        <h1 className="text-2xl lg:text-3xl font-bold dark:text-gray-200">
+          Gilson Filho
+        </h1>
+        <h2 className="font-normal text-sm dark:text-gray-200">
+          Fullstack Software Engineer
+        </h2>
         <div className="flex gap-3 items-center pt-2">
           <Hyperlink
             className="text-xs md:text-md lg:text-base"
             href="mailto:me@gilsondev.in"
-            label={<Mail />}
+            label={
+              <Mail className="dark:text-gray-200 dark:hover:text-gray-500" />
+            }
           />
           <Hyperlink
             className="text-xs md:text-md lg:text-base"
             href="https://linkedin.com/in/gilsondev"
-            label={<Linkedin />}
+            label={
+              <Linkedin className="dark:text-gray-200 dark:hover:text-gray-500" />
+            }
             target="_blank"
           />
           <Hyperlink
             className="text-xs md:text-md lg:text-base"
             href="https://github.com/gilsondev"
-            label={<Github />}
+            label={
+              <Github className="dark:text-gray-200 dark:hover:text-gray-500" />
+            }
             target="_blank"
           />
         </div>
       </div>
+      <ThemeSwitcher />
     </header>
   );
 };

@@ -4,7 +4,10 @@ import type { Metadata } from "next";
 import { Merriweather } from "next/font/google";
 import GAnalytics from "@/components/ganalytics";
 
-const merriweather = Merriweather({ subsets: ["latin"], weight: "400" });
+const merriweather = Merriweather({
+  subsets: ["latin"],
+  weight: ["300", "400", "700", "900"],
+});
 
 export const metadata: Metadata = {
   title: "Gilson Filho",
@@ -17,8 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={clsx(merriweather.className, "bg-gray-100")}>
+    <html lang="en" className="dark">
+      <body
+        className={clsx(merriweather.className, "bg-gray-100 dark:bg-gray-800")}
+      >
         <GAnalytics />
         {children}
       </body>

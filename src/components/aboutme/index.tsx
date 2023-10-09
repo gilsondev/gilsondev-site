@@ -3,8 +3,8 @@ import React from "react";
 const AboutMe = () => {
   return (
     <div>
-      <h3 className="text-xl font-semibold">Sobre mim</h3>
-      <p className="pt-3 font-normal text-sm lg:text-base text-justify">
+      <h3 className="text-xl font-semibold dark:text-gray-200">Sobre mim</h3>
+      <p className="pt-3 font-thin text-sm lg:text-base text-justify dark:text-gray-200">
         Nos últimos 12 anos atuei em projetos nas áreas{" "}
         <strong className="font-bold">pública</strong> e em{" "}
         <strong className="font-bold">startups</strong>. Trabalho com tecnologia
@@ -15,7 +15,7 @@ const AboutMe = () => {
         </strong>{" "}
         e <strong className="font-bold">Data Pipelines</strong>.
       </p>
-      <p className="pt-3 font-normal text-sm lg:text-base text-justify">
+      <p className="pt-3 font-thin text-sm lg:text-base text-justify dark:text-gray-200">
         Tenho o objetivo de{" "}
         <strong className="font-bold">
           impulsionar o crescimento das empresas
