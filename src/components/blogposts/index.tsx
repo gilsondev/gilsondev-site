@@ -17,7 +17,7 @@ const BlogPosts = ({ posts }: BlogPostsProps) => {
         ))}
       </div>
       <Hyperlink
-        className="mt-10"
+        className="mt-3 text-base"
         href="https://blog.gilsondev.in"
         text="Ver mais"
         target="_blank"

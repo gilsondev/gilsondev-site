@@ -21,7 +21,7 @@ const Hyperlink = ({
       href={href}
       className={clsx(
         className,
-        "flex gap-1 items-center hover:text-gray-500 text-md sm:text-lg lg:text-base underline group"
+        "flex gap-1 items-center hover:text-gray-500 text-sm sm:text-lg lg:text-base underline group"
       )}
       target={target}
     >

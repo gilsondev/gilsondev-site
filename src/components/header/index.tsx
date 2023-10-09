@@ -18,13 +18,19 @@ const Header = () => {
         <h1 className="text-2xl lg:text-3xl font-bold">Gilson Filho</h1>
         <h2 className="font-normal text-sm">Fullstack Software Engineer</h2>
         <div className="flex gap-3 items-center pt-2">
-          <Hyperlink href="mailto@me@gilsondev.in" text="E-mail" />
           <Hyperlink
+            className="text-xs"
+            href="mailto@me@gilsondev.in"
+            text="E-mail"
+          />
+          <Hyperlink
+            className="text-xs"
             href="https://linkedin.com/in/gilsondev"
             text="LinkedIn"
             target="_blank"
           />
           <Hyperlink
+            className="text-xs"
             href="https://github.com/gilsondev"
             text="Github"
             target="_blank"
