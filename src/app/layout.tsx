@@ -11,13 +11,34 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
-  title: "Gilson Filho",
+  title: "Gilson Filho - Fullstack Engineer",
   description: "Site do desenvolvedor Gilson Filho",
   openGraph: {
     type: "website",
-    title: "Gilson Filho",
-    description: "Site do desenvolvedor Gilson Filho",
-    images: ["/logo.svg"],
+    title: "Gilson Filho - Fullstack Engineer",
+    description: `Atuo há 15 anos em projetos públicos e em startups, trabalhando 
+    com tecnologia desde jovem. Crio soluções como Sistemas Desktop, Sistemas Web, 
+    APIs, Web Scraping e Data Pipelines. Meu objetivo é impulsionar o crescimento 
+    das empresas, criar produtos inovadores e contribuir para políticas públicas através do Software Livre.
+    `,
+    siteName: "Gilson Filho",
+    images: [
+      {
+        url: "/logo.svg",
+        width: 800,
+        height: 600,
+        alt: "Gilson Filho",
+        type: "image/svg",
+      },
+      {
+        url: "/logo.png",
+        width: 1800,
+        height: 1600,
+        alt: "Gilson Filho",
+        type: "image/svg",
+      },
+    ],
+    locale: "pt-BR",
   },
 };
 
