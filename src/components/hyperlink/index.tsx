@@ -8,7 +8,7 @@ interface HyperlinkProps {
   label: string | React.ReactNode;
   target?: string;
   className?: string;
-  title: string;
+  title?: string;
 }
 
 const Hyperlink = ({
