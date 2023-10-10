@@ -1,9 +1,5 @@
+import { calculateExperienceYearsFromToday } from "@/lib/utils";
 import React from "react";
-
-const calculateExperienceYearsFromToday = () => {
-  const startYear = 2008;
-  return new Date().getFullYear() - startYear;
-};
 
 const AboutMe = () => {
   return (

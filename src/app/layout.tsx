@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Merriweather } from "next/font/google";
 import GAnalytics from "@/components/ganalytics";
 import { ThemeProvider } from "./providers";
+import { calculateExperienceYearsFromToday } from "@/lib/utils";
 
 const merriweather = Merriweather({
   subsets: ["latin"],
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     title: "Gilson Filho - Fullstack Engineer",
-    description: `Atuo há 15 anos em projetos públicos e em startups, trabalhando 
+    description: `Atuo há ${calculateExperienceYearsFromToday()} anos em projetos públicos e em startups, trabalhando 
     com tecnologia desde jovem. Crio soluções como Sistemas Desktop, Sistemas Web, 
     APIs, Web Scraping e Data Pipelines. Meu objetivo é impulsionar o crescimento 
     das empresas, criar produtos inovadores e contribuir para políticas públicas através do Software Livre.
