@@ -38,7 +38,6 @@ const Experience = () => {
               width={64}
               height={64}
               alt="Logo Jusbrasil"
-              objectFit="cover"
               className="rounded-full"
             />
             <div className="flex flex-col gap-1 items-start">
