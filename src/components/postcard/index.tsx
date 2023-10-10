@@ -14,13 +14,13 @@ const PostCard = ({ post }: PostCardProps) => {
         href={`https://blog.gilsondev.in/${post.slug}`}
         target="_blank"
         key={post._id}
-        className="py-5"
+        className="py-5 hover:bg-gray-200 dark:hover:bg-gray-700 p-2 rounded-md"
       >
         <span className="text-xs font-bold text-gray-400">
           {new Date(post.dateAdded).toLocaleDateString("pt-BR")}
         </span>
         <div className="flex justify-between items-center gap-3">
-          <span className="text-gray-800 font-bold text-sm lg:text-base hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400">
+          <span className="text-gray-800 font-bold text-sm md:text-lg dark:text-gray-200">
             {post.title}
           </span>
           <Image

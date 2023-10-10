@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Hyperlink from "../hyperlink";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Brain, Github, Linkedin, Mail } from "lucide-react";
 import ThemeSwitcher from "../themeswitcher";
 
 const Header = () => {
@@ -28,6 +28,7 @@ const Header = () => {
             label={
               <Mail className="dark:text-gray-200 dark:hover:text-gray-500" />
             }
+            title="E-mail"
           />
           <Hyperlink
             className="text-xs md:text-md lg:text-base"
@@ -36,6 +37,7 @@ const Header = () => {
               <Linkedin className="dark:text-gray-200 dark:hover:text-gray-500" />
             }
             target="_blank"
+            title="LinkedIn"
           />
           <Hyperlink
             className="text-xs md:text-md lg:text-base"
@@ -44,6 +46,15 @@ const Header = () => {
               <Github className="dark:text-gray-200 dark:hover:text-gray-500" />
             }
             target="_blank"
+            title="Github"
+          />
+          <Hyperlink
+            className="text-xs md:text-md lg:text-base"
+            href="https://notes.gilsondev.in"
+            label={
+              <Brain className="dark:text-gray-200 dark:hover:text-gray-500" />
+            }
+            title="Second Brain"
           />
         </div>
       </div>

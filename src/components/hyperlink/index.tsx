@@ -8,6 +8,7 @@ interface HyperlinkProps {
   label: string | React.ReactNode;
   target?: string;
   className?: string;
+  title: string;
 }
 
 const Hyperlink = ({
@@ -15,6 +16,7 @@ const Hyperlink = ({
   label,
   className,
   target = "self",
+  title,
 }: HyperlinkProps) => {
   return (
     <Link
@@ -24,6 +26,7 @@ const Hyperlink = ({
         "flex gap-1 items-center hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-500 underline group"
       )}
       target={target}
+      title={title}
     >
       {label}
       {typeof label === "string" && (

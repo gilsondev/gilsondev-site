@@ -11,7 +11,7 @@ const BlogPosts = async () => {
       <h3 className="text-xl font-semibold dark:text-gray-200">
         Últimas postagens
       </h3>
-      <div className="flex flex-col gap-3 list-none">
+      <div className="flex flex-col gap-3 mt-3 list-none">
         {posts.data.user.publication.posts.map((post) => (
           <PostCard key={post._id} post={post} />
         ))}

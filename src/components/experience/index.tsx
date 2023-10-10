@@ -32,7 +32,10 @@ const Experience = () => {
       </h3>
       <ul className="list-none flex flex-col gap-5 mt-3">
         {lastExperiences.map((experience, index) => (
-          <li key={index} className="flex items-center gap-1">
+          <li
+            key={index}
+            className="flex items-center gap-1 hover:bg-gray-200 dark:hover:bg-gray-700 p-2 rounded-md"
+          >
             <Image
               src={experience.organizationImage}
               width={64}
