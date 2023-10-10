@@ -13,6 +13,7 @@ const merriweather = Merriweather({
 export const metadata: Metadata = {
   title: "Gilson Filho - Fullstack Engineer",
   description: "Site do desenvolvedor Gilson Filho",
+  metadataBase: new URL("https://gilsondev.in"),
   openGraph: {
     type: "website",
     title: "Gilson Filho - Fullstack Engineer",
@@ -24,18 +25,18 @@ export const metadata: Metadata = {
     siteName: "Gilson Filho",
     images: [
       {
-        url: "/logo.svg",
+        url: "/avatar.png",
         width: 800,
         height: 600,
         alt: "Gilson Filho",
-        type: "image/svg",
+        type: "image/png",
       },
       {
-        url: "/logo.png",
+        url: "/avatar.png",
         width: 1800,
         height: 1600,
         alt: "Gilson Filho",
-        type: "image/svg",
+        type: "image/png",
       },
     ],
     locale: "pt-BR",

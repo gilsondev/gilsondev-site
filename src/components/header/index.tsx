@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className="flex items-center gap-5 py-10 sm:px-0">
       <Image
-        src="/avatar.jpeg"
+        src="/avatar.png"
         alt="Gilson Filho"
         width={96}
         height={96}
