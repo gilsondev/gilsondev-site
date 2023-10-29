@@ -1,0 +1,24 @@
+{
+  "LocaleLayout": {
+    "title": "Gilson Filho - Fullstack Developer",
+    "description": "I have been working for {exp_years} years on public and startup projects, working with technology since a young age. I create solutions like Desktop Systems, Web Systems, APIs, Web Scraping, and Data Pipelines. My goal is to drive company growth, create innovative products, and contribute to public policies through Open Source Software."
+  },
+  "Index": {
+    "name": "Gilson Filho",
+    "role": "Fullstack Software Engineer"
+  },
+  "AboutMe": {
+    "title": "About me",
+    "description_p1": "In the last 15 years, I have worked on projects in the <emp>public</emp> and <emp>startup</emp> sectors. I have been working with technology since a young age, learning to program through various projects, creating a variety of solutions such as <emp>Desktop Systems, Web Systems, APIs, Web Scraping</emp>, and <emp>Data Pipelines</emp>.",
+    "description_p2": "My goal is to <emp>drive company growth</emp> through <emp>problem-solving</emp>, create <emp>innovative products</emp>, and contribute to various <emp>public policies</emp> through <emp>Open Source Software</emp>."
+  },
+  "TechStacks": {
+    "title": "Tech Stacks"
+  },
+  "Experiences": {
+    "title": "Last experiences"
+  },
+  "BlogPosts": {
+    "title": "Last posts"
+  }
+}
