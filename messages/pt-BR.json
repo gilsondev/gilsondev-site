@@ -1,0 +1,24 @@
+{
+  "LocaleLayout": {
+    "title": "Gilson Filho - Desenvolvedor Fullstack",
+    "description": " Atuo há {exp_years} anos em projetos públicos e em startups, trabalhando com tecnologia desde jovem. Crio soluções como Sistemas Desktop, Sistemas Web, APIs, Web Scraping e Data Pipelines. Meu objetivo é impulsionar o crescimento das empresas, criar produtos inovadores e contribuir para políticas públicas através do Software Livre."
+  },
+  "Index": {
+    "name": "Gilson Filho",
+    "role": "Desenvolvedor Fullstack"
+  },
+  "AboutMe": {
+    "title": "Sobre mim",
+    "description_p1": "Nos últimos 15 anos atuei em projetos nas áreas <emp>pública</emp> e em <emp>startups</emp>. Trabalho com tecnologia desde muito jovem, aprendi a programar com diversos projetos, criando as mais variadas soluções como <emp>Sistemas Desktop, Sistemas Web, APIs, Web Scraping</emp> e <emp>Data Pipelines</emp>.",
+    "description_p2": "Tenho o objetivo de <emp>impulsionar o crescimento das empresas</emp> através da <emp>resolução de problemas</emp>, criar <emp>produtos inovadores</emp>, além de ajudar várias <emp>políticas públicas</emp> por meio do <emp>Software Livre</emp>."
+  },
+  "TechStacks": {
+    "title": "Tech Stacks"
+  },
+  "Experiences": {
+    "title": "Últimas experiências"
+  },
+  "BlogPosts": {
+    "title": "Últimas postagens"
+  }
+}

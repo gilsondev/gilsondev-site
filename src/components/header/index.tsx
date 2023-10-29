@@ -3,24 +3,24 @@ import React from "react";
 import Hyperlink from "../hyperlink";
 import { Brain, Github, Linkedin, Mail } from "lucide-react";
 import ThemeSwitcher from "../themeswitcher";
+import { useTranslations } from "next-intl";
 
 const Header = () => {
+  const t = useTranslations("Index");
   return (
     <header className="flex items-center gap-5 py-10 sm:px-0">
       <Image
         src="/avatar.png"
-        alt="Gilson Filho"
+        alt={t("name")}
         width={96}
         height={96}
         className="rounded-full"
       />
       <div className="w-5/6">
         <h1 className="text-2xl lg:text-3xl font-bold dark:text-gray-200">
-          Gilson Filho
+          {t("name")}
         </h1>
-        <h2 className="font-normal text-sm dark:text-gray-200">
-          Fullstack Software Engineer
-        </h2>
+        <h2 className="font-normal text-sm dark:text-gray-200">{t("role")}</h2>
         <div className="flex gap-3 items-center pt-2">
           <Hyperlink
             className="text-xs md:text-md lg:text-base"

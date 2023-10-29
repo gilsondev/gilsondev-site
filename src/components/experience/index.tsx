@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { useTranslations } from "next-intl";
 
 const lastExperiences = [
   {
@@ -25,11 +26,10 @@ const lastExperiences = [
 ];
 
 const Experience = () => {
+  const t = useTranslations("Experiences");
   return (
     <div className="mt-16">
-      <h3 className="text-xl font-semibold dark:text-gray-200">
-        Últimas experiências
-      </h3>
+      <h3 className="text-xl font-semibold dark:text-gray-200">{t("title")}</h3>
       <ul className="list-none flex flex-col gap-5 mt-3">
         {lastExperiences.map((experience, index) => (
           <li
